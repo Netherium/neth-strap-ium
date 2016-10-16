@@ -11,6 +11,9 @@ Heavenly inspired by [Google Material Design](https://material.google.com/) and 
 ## Issues/Bugs
 * Inputs out of focus will not work (should be fixed at [Firefox 51.0](https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown))
 
+## Docs
+* [https://netherium.github.io/neth-strap-ium/docs/](https://netherium.github.io/neth-strap-ium/docs/)
+
 ## Authors
 **Netherium**
 
