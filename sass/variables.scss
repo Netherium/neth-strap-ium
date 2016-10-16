@@ -1,0 +1,35 @@
+// Base Variables
+$font-family-base: Roboto, Arial, sans-serif;
+$font-size-base: 14px;
+$font-size-input: 16px;
+$font-size-small: 10px;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$line-height-base: 1.428571429;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+
+// Base and Helper Color Variables
+$body-bg: #efefef;
+$text-base-color: #484848;
+$border-color: #ccc;
+$color-primary: #039be5;
+$color-accent: #b2ff59;
+$color-warn: #ff4081;
+
+// Spacing and Grid Variables
+$padding-base: 8px;
+$padding-double: 16px;
+$padding-inner-container: 32px;
+$grid-columns: 12;
+
+// Container Styling
+$border-radius-base: 3px;
+$border-radius-container: 4px;
+$box-shadow-double: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+// Responsive Breakpoints
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+

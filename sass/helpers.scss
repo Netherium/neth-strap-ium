@@ -1,0 +1,77 @@
+// Classes that can be placed
+// anywhere to adjust styling or layout
+.row {
+  margin-right: -$padding-double;
+  margin-left: -$padding-double;
+  @include clearfix();
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.muted {
+  color: lighten($text-base-color, 20%)
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+
+.tooltip {
+  position: relative;
+  &:hover, &:focus {
+    &:after {
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+  &:after {
+    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: ($font-size-small*2 + 5px);
+    background-color: rgba($text-base-color, 0.95);
+    color: white;
+    padding: $padding-base/2;
+    left: calc(50% - 50px);
+    width: 100px;
+    border-radius: $border-radius-base;
+    box-shadow: $box-shadow-double;
+    text-align: center;
+    visibility: hidden;
+    transform: scale(0);
+    font-size: $font-size-small;
+    z-index: 10;
+  }
+  &.bottom {
+    &:after {
+      top: ($font-size-small*2 + 5px);
+      bottom: auto;
+    }
+  }
+}

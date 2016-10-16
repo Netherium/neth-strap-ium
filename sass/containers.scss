@@ -1,0 +1,38 @@
+// Base and Helper Containers
+.container{
+  padding: 0 $padding-double;
+  margin: 0 auto;
+  @include clearfix();
+  @media (min-width: $screen-sm) {
+    width: $screen-sm - $padding-double;
+  }
+  @media (min-width: $screen-md) {
+    width: $screen-md - $padding-double;
+  }
+  @media (min-width: $screen-lg) {
+    width: $screen-lg - $padding-double;
+  }
+}
+
+.well {
+  background: white;
+  box-shadow: $box-shadow-double;
+  padding: $padding-inner-container;
+  border-radius: $border-radius-container;
+  margin-bottom: $padding-inner-container;
+}
+
+.card{
+  background: white;
+  min-height: 200px;
+  width: $screen-xs;
+  box-shadow: $box-shadow-double;
+  border-radius: $border-radius-container;
+  margin-bottom: $padding-inner-container;
+  .card__section{
+    padding: $padding-double;
+  }
+  .card--border{
+    border-bottom: 1px solid $border-color;
+  }
+}
